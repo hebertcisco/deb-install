@@ -42,6 +42,8 @@ wine instalar-freenfe.exe ;
 
 ## System update ##
 sudo apt update && sudo apt dist-upgrade -y && sudo apt autoclean -y && sudo apt autoremove -y &&
-
+## Clean trashes
+sudo apt autoclean &&
+sudo apt autoremove &&
 #End of Script ##
 echo "Everything is ready"
