@@ -6,4 +6,4 @@ Ubuntu Installation Automation
 
 `sudo ./ubuntu.install.sh`
 
-First update by [Hebert F. Barros](#) 2019
+First update by [Hebert F. Barros](https://github.com/tecnobert) 2019
