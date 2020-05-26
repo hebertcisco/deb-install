@@ -10,5 +10,5 @@ Ubuntu Installation Automation
 
 - > Go install: 
 ```sh
-sudo chmod 700 ubuntu.install.sh && ./ubuntu.install.sh
+sudo chmod 700 install.sh && ./install.sh
 ```
