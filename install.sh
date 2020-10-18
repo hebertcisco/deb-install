@@ -9,7 +9,7 @@ echo 'installing curl'
 sudo apt install curl -y
 
 echo 'installing snapd' 
-sudo apt install snapd -y
+sudo apt-get install snapd -y
 
 echo 'installing git' 
 sudo apt install git -y
@@ -78,7 +78,7 @@ echo 'installing android-studio'
 sudo snap install android-studio --classic
 
 echo 'installing postman' 
-sudo snap install postman
+sudo snap install postman --classic
 
 echo 'installing eclipse' 
 sudo snap install eclipse --classic
@@ -96,16 +96,16 @@ echo 'installing flutter'
 sudo snap install flutter --classic
 
 echo 'installing beekeeper-studio' 
-sudo snap install beekeeper-studio
+sudo snap install beekeeper-studio --classic
 
 echo 'installing obs-studio' 
-sudo snap install obs-studio
+sudo snap install obs-studio --classic
 
 echo 'installing kdenlive' 
-sudo snap install kdenlive
+sudo snap install kdenlive --classic
 
 echo 'installing audacity' 
-sudo snap install audacity
+sudo snap install audacity --classic
 
 echo 'installing chrome' 
 curl -fsSL http://bit.ly/chrome-sh | sh
