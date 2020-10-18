@@ -71,6 +71,39 @@ code --install-extension yzhang.markdown-all-in-one
 echo 'installing spotify' 
 snap install spotify
 
+echo 'installing android-studio' 
+sudo snap install android-studio --classic
+
+echo 'installing postman' 
+sudo snap install postman
+
+echo 'installing eclipse' 
+sudo snap install eclipse --classic
+
+echo 'installing intellij-idea-community' 
+sudo snap install intellij-idea-community --classic
+
+echo 'installing netbeans' 
+sudo snap install netbeans --classic
+
+echo 'installing kotlin'
+sudo snap install kotlin --classic
+ 
+echo 'installing flutter' 
+sudo snap install flutter --classic
+
+echo 'installing beekeeper-studio' 
+sudo snap install beekeeper-studio
+
+echo 'installing obs-studio' 
+sudo snap install obs-studio
+
+echo 'installing kdenlive' 
+sudo snap install kdenlive
+
+echo 'installing audacity' 
+sudo snap install audacity
+
 echo 'installing chrome' 
 curl -fsSL http://bit.ly/chrome-sh | sh
 
