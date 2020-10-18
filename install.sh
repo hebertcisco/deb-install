@@ -8,6 +8,9 @@ sudo apt-get update
 echo 'installing curl' 
 sudo apt install curl -y
 
+echo 'installing snapd' 
+sudo apt install snapd -y
+
 echo 'installing git' 
 sudo apt install git -y
 
