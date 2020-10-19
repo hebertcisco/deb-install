@@ -58,6 +58,9 @@ echo 'installing vim'
 sudo apt install vim -y
 clear
 
+echo 'installing pip'
+curl -fsSL http://bit.ly/pip-install-sh | sh
+
 curl -fsSL http://bit.ly/code-sh | sh
 
 echo 'installing extensions'
