@@ -60,6 +60,8 @@ clear
 
 echo 'installing pip'
 curl -fsSL http://bit.ly/pip-install-sh | sh
+rm -rf get-pip.py
+clear
 
 curl -fsSL http://bit.ly/code-sh | sh
 
