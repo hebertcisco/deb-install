@@ -75,6 +75,20 @@ code --install-extension foxundermoon.shell-format
 code --install-extension pmneo.tsimporter
 code --install-extension waderyan.gitblame
 code --install-extension yzhang.markdown-all-in-one
+code --install-extension cweijan.cweijan-personal-material-icon-theme
+code --install-extension ritwickdey.LiveServer
+code --install-extension esbenp.prettier-vscode
+code --install-extension ms-python.python
+code --install-extension VisualStudioExptTeam.vscodeintellicode
+code --install-extension msjsdiag.debugger-for-chrome
+code --install-extension xabikos.JavaScriptSnippets
+code --install-extension abusaidm.html-snippets
+code --install-extension CoenraadS.bracket-pair-colorizer
+code --install-extension TabNine.tabnine-vscode
+code --install-extension nodesource.vscode-for-node-js-development-pack
+code --install-extension jawandarajbir.react-vscode-extension-pack
+code --install-extension loiane.ts-extension-pack
+code --install-extension swellaby.rust-pack
 
 echo 'installing spotify' 
 snap install spotify
@@ -133,6 +147,15 @@ nvm install 12
 nvm alias default 12
 node --version
 npm --version
+
+echo 'installing Homebrew' 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+
+echo 'installing rustup' 
+curl https://sh.rustup.rs -sSf | sh
+
+echo 'installing deno' 
+curl -fsSL https://deno.land/x/install/install.sh | sh
 
 echo 'installing autosuggestions' 
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
