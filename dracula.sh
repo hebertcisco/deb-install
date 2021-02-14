@@ -1,3 +1,7 @@
+#!/bin/sh
+## By Hebert F. Barros 2021
+## Removing any apt ## crashes
+
 echo 'adding dracula theme'
 cat <<EOF >~/.config/terminator/config
 [global_config]
