@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
+## By Hebert F. Barros 2021
+## Removing any apt ## crashes
 
 _php_versions=(
     '5.6' '7.0' '7.1' '7.2'
