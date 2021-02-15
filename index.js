@@ -1,19 +1,32 @@
 const { spawn } = require("child_process");
 
-const ls = spawn("make", ["-la"]);
+const { program } = require("commander");
+const package = require("./package.json");
 
-ls.stdout.on("data", (data) => {
-  console.log(`stdout: ${data}`);
-});
+program.version(package.version);
 
-ls.stderr.on("data", (data) => {
-  console.log(`stderr: ${data}`);
-});
+function Make(command) {
+  const make = spawn(command, ["-la"]);
 
-ls.on("error", (error) => {
-  console.log(`error: ${error.message}`);
-});
+  make.stdout.on("data", (data) => {
+    console.log(`stdout: ${data}`);
+  });
 
-ls.on("close", (code) => {
-  console.log(`child process exited with code ${code}`);
-});
+  make.stderr.on("data", (data) => {
+    console.log(`stderr: ${data}`);
+  });
+
+  make.on("error", (error) => {
+    console.log(`error: ${error.message}`);
+  });
+
+  make.on("close", (code) => {
+    console.log(`child process exited with code ${code}`);
+  });
+}
+
+program
+  .option("-i, --install", "install argument", Make("make"))
+  .option("-c, --clear", "clear argument", Make("make clear"));
+
+program.parse();
