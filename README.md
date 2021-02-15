@@ -11,12 +11,19 @@
 
 > Ubuntu Installation Automation
 
-## Install
+## Install via source
 
 ```sh
 git clone https://github.com/hebertcisco/ubuntu-auto-install
 cd ubuntu-auto-install
 make
+```
+
+## Install via npm package
+
+```sh
+sudo npm install ubuntu-auto -g
+ubuntu-auto -i
 ```
 
 ## Author
