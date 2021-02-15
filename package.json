@@ -1,0 +1,23 @@
+{
+  "name": "ubuntu-auto",
+  "version": "1.0.0",
+  "description": "Ubuntu apps Installation Automation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hebertcisco/ubuntu-auto-install.git"
+  },
+  "keywords": ["shell","ubuntu","apt","snap","snapd","deb","debian"],
+  "author": "Hebert F. Barros",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hebertcisco/ubuntu-auto-install/issues"
+  },
+  "homepage": "https://github.com/hebertcisco/ubuntu-auto-install#readme",
+  "dependencies": {
+    "commander": "^7.1.0"
+  }
+}
