@@ -149,6 +149,9 @@ main() {
   sudo dpkg -i dbeaver-ce_6.0.0_amd64.deb
   sudo apt-get install -f
 
+  sh dotnet-install.sh -c Current
+  sh dotnet-install.sh -c Current --runtime aspnetcore
+  
   curl -fsSL https://raw.githubusercontent.com/hebertcisco/instantclient_oracledb/master/install.sh | sh
 }
 
