@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to Ubuntu Auto-Install 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.3.7-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.3.8-blue.svg?cacheSeconds=2592000" />
   <a href="LICENSE" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
   </a>
@@ -14,7 +14,7 @@
 ## Install
 
 ```sh
-gi clone https://github.com/hebertcisco/ubuntu-auto-install
+git clone https://github.com/hebertcisco/ubuntu-auto-install
 cd ubuntu-auto-install
 make
 ```
