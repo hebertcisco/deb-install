@@ -152,6 +152,7 @@ main() {
   sh dotnet-install.sh -c Current
   sh dotnet-install.sh -c Current --runtime aspnetcore
   
+  sh sbt.sh
   curl -fsSL https://raw.githubusercontent.com/hebertcisco/instantclient_oracledb/master/install.sh | sh
 }
 
