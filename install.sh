@@ -48,8 +48,8 @@ main() {
   curl -fsSL http://bit.ly/code-sh | sh
 
   sh php-switch.sh install 7.0
-
-  if [ -d snap ]; then
+if ! snap -v snap &> /dev/null 
+  then
     echo 'installing spotify'
     snap install spotify
 
