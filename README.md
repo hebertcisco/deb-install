@@ -29,6 +29,12 @@ sudo npm install ubuntu-auto -g
 ubuntu-auto -i
 ```
 
+## Install via curl
+
+```sh
+curl -fsSL https://raw.githubusercontent.com/hebertcisco/ubuntu-auto-install/master/install.sh | sh
+```
+
 ## Author
 
 👤 **Hebert F Barros**
