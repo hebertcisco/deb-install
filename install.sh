@@ -48,46 +48,6 @@ main() {
   curl -fsSL http://bit.ly/code-sh | sh
 
   sh php-switch.sh install 7.0
-if ! snap -v snap &> /dev/null 
-  then
-    echo 'installing spotify'
-    snap install spotify
-
-    echo 'installing android-studio'
-    sudo snap install android-studio --classic
-
-    echo 'installing postman'
-    sudo snap install postman --classic
-
-    echo 'installing eclipse'
-    sudo snap install eclipse --classic
-
-    echo 'installing intellij-idea-community'
-    sudo snap install intellij-idea-community --classic
-
-    echo 'installing netbeans'
-    sudo snap install netbeans --classic
-
-    echo 'installing kotlin'
-    sudo snap install kotlin --classic
-
-    echo 'installing flutter'
-    sudo snap install flutter --classic
-
-    echo 'installing beekeeper-studio'
-    sudo snap install beekeeper-studio --classic
-
-    echo 'installing obs-studio'
-    sudo snap install obs-studio --classic
-
-    echo 'installing kdenlive'
-    sudo snap install kdenlive --classic
-
-    echo 'installing audacity'
-    sudo snap install audacity --classic
-    return 1
-  fi
-  sudo apt-get install snapd -y
 
   echo 'installing chrome'
   curl -fsSL http://bit.ly/chrome-sh | sh
@@ -154,6 +114,47 @@ if ! snap -v snap &> /dev/null
   
   sh sbt.sh
   curl -fsSL https://raw.githubusercontent.com/hebertcisco/instantclient_oracledb/master/install.sh | sh
+  
+  if ! snap -v snap &> /dev/null 
+  then
+    echo 'installing spotify'
+    snap install spotify
+
+    echo 'installing android-studio'
+    sudo snap install android-studio --classic
+
+    echo 'installing postman'
+    sudo snap install postman --classic
+
+    echo 'installing eclipse'
+    sudo snap install eclipse --classic
+
+    echo 'installing intellij-idea-community'
+    sudo snap install intellij-idea-community --classic
+
+    echo 'installing netbeans'
+    sudo snap install netbeans --classic
+
+    echo 'installing kotlin'
+    sudo snap install kotlin --classic
+
+    echo 'installing flutter'
+    sudo snap install flutter --classic
+
+    echo 'installing beekeeper-studio'
+    sudo snap install beekeeper-studio --classic
+
+    echo 'installing obs-studio'
+    sudo snap install obs-studio --classic
+
+    echo 'installing kdenlive'
+    sudo snap install kdenlive --classic
+
+    echo 'installing audacity'
+    sudo snap install audacity --classic
+    return 1
+  fi
+  sudo apt-get install snapd -y
 }
 
 main "$1"
