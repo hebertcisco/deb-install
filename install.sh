@@ -60,13 +60,13 @@ main() {
   echo 'installing deno'
   curl -fsSL https://deno.land/x/install/install.sh | sh
 
-  echo 'installing slack'
-  wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb
-  sudo apt install ./slack-desktop-*.deb -y
+  #echo 'installing slack'
+  #wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb
+  #sudo apt install ./slack-desktop-*.deb -y
 
-  echo 'installing terminator'
-  sudo apt-get update
-  sudo apt-get install terminator -y
+  #echo 'installing terminator'
+  #sudo apt-get update
+  #sudo apt-get install terminator -y
 
   sh dracula.sh
 
@@ -85,32 +85,32 @@ main() {
   sudo chmod +x /usr/local/bin/docker-compose
   docker-compose --version
 
-  echo 'installing aws-cli'
-  sudo apt-get install awscli -y
-  aws --version
-  curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
-  sudo dpkg -i session-manager-plugin.deb
-  session-manager-plugin --version
+  #echo 'installing aws-cli'
+  #sudo apt-get install awscli -y
+  #aws --version
+  #curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
+  #sudo dpkg -i session-manager-plugin.deb
+  #session-manager-plugin --version
 
-  echo 'installing teamviewer'
-  wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-  sudo apt install -y ./teamviewer_amd64.deb
+  #echo 'installing teamviewer'
+  #wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+  #sudo apt install -y ./teamviewer_amd64.deb
 
-  echo 'installing vnc-viewer'
-  sudo apt-get install -y --no-install-recommends ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
-  sudo apt-get install vnc4server -y
+  #echo 'installing vnc-viewer'
+  #sudo apt-get install -y --no-install-recommends ubuntu-desktop gnome-panel gnome-settings-daemon metacity nautilus gnome-terminal
+  #sudo apt-get install vnc4server -y
 
-  echo 'installing fzf'
-  git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-  ~/.fzf/install --all
+  #echo 'installing fzf'
+  #git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+  #~/.fzf/install --all
 
   echo 'installing dbeaver'
   wget -c https://dbeaver.io/files/6.0.0/dbeaver-ce_6.0.0_amd64.deb
   sudo dpkg -i dbeaver-ce_6.0.0_amd64.deb
   sudo apt-get install -f
 
-  sh dotnet-install.sh -c Current
-  sh dotnet-install.sh -c Current --runtime aspnetcore
+  #sh dotnet-install.sh -c Current
+  #sh dotnet-install.sh -c Current --runtime aspnetcore
   
   sh sbt.sh
   curl -fsSL https://raw.githubusercontent.com/hebertcisco/instantclient_oracledb/master/install.sh | sh
