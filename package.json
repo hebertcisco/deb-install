@@ -18,6 +18,6 @@
   },
   "homepage": "https://github.com/hebertcisco/ubuntu-auto-install#readme",
   "dependencies": {
-    "commander": "^8.0.0"
+    "commander": "^9.0.0"
   }
 }
