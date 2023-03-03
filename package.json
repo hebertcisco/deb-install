@@ -8,19 +8,19 @@
     "postversion": "git push && git push --tags"
   },
   "bin": {
-    "deb-install": "install.sh",
-    "deb-install-aws": "packages/aws/aws-cli.sh",
-    "deb-install-basics": "packages/basics/basics.sh",
-    "deb-install-configs": "packages/configs/index.sh",
-    "deb-install-dbeaver": "packages/dbeaver/dbeaver.sh",
-    "deb-install-docker": "packages/docker/docker.sh",
-    "deb-install-dotnet": "packages/dotnet/dotnet-install.sh",
-    "deb-install-git": "packages/git/gitconfig.sh",
-    "deb-install-php": "packages/php/php.sh",
-    "deb-install-snap": "packages/snap/snap.sh",
-    "deb-install-vim": "packages/vim/set_vim.sh",
-    "deb-install-code": "packages/vs-code/vs-code.sh",
-    "deb-install-zsh": "packages/zsh/set_z.sh"
+    "deb-install": "./install.sh",
+    "deb-install-aws": "./packages/aws/aws-cli.sh",
+    "deb-install-basics": "./packages/basics/basics.sh",
+    "deb-install-configs": "./packages/configs/index.sh",
+    "deb-install-dbeaver": "./packages/dbeaver/dbeaver.sh",
+    "deb-install-docker": "./packages/docker/docker.sh",
+    "deb-install-dotnet": "./packages/dotnet/dotnet-install.sh",
+    "deb-install-git": "./packages/git/gitconfig.sh",
+    "deb-install-php": "./packages/php/php.sh",
+    "deb-install-snap": "./packages/snap/snap.sh",
+    "deb-install-vim": "./packages/vim/set_vim.sh",
+    "deb-install-code": "./packages/vs-code/vs-code.sh",
+    "deb-install-zsh": "./packages/zsh/set_z.sh"
   },
   "engines": {
     "node": ">=14.20.1",
