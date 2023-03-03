@@ -1,48 +1,39 @@
-<h1 align="center">Welcome to Ubuntu Auto-Install 👋</h1>
-<p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="LICENSE" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-  <a href="https://twitter.com/hebertcisco" target="_blank">
-    <img alt="Twitter: hebertcisco" src="https://img.shields.io/twitter/follow/hebertcisco.svg?style=social" />
-  </a>
-</p>
+# Debian based apps Installation Automation
 
-<p align="center">Gostou o projeto? Por favor considere <a href="https://github.com/hebertcisco/hebertcisco/blob/main/.github/patreon.md">ser um apoiador</a> e receba brindes exclusivos!
- </p>
- 
-> Ubuntu Installation Automation
+> This script automates the installation of useful tools for a common dev on Debian-based systems.
 
-## Install via source
+### Requirements
+
+A Debian-based system (e.g. Ubuntu, Debian)
+apt package manager installed
+An internet connection
+
+### Usage
+To use the script, open a terminal and run the following command:
+
+#### From source
 
 ```sh
-git clone https://github.com/hebertcisco/ubuntu-auto-install
-cd ubuntu-auto-install
+git clone https://github.com/hebertcisco/deb-install
+cd deb-install
 make
-```
 
-## Install via npm package
+```
+#### Bash & Curl
 
 ```sh
-sudo npm install ubuntu-auto -g
-ubuntu-auto -i
+curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/install.sh | sh
 ```
 
-## Install via curl
+#### With NPM
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/hebertcisco/ubuntu-auto-install/master/install.sh | sh
+npx deb-install
 ```
 
-## Author
+### Support
 
-👤 **Hebert F Barros**
-
-- Website: https://tecnobert.com.br/
-- Twitter: [@hebertcisco](https://twitter.com/hebertcisco)
-- Github: [@hebertcisco](https://github.com/hebertcisco)
-- LinkedIn: [@hebert-f-barros](https://linkedin.com/in/hebert-f-barros)
+If you have any issues or questions about using this script, please open an issue on the GitHub repository or contact the author directly.
 
 ## 🤝 Contributing
 
@@ -58,5 +49,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2020 [Hebert F Barros](https://github.com/hebertcisco).<br />
+Copyright © 2023 [Hebert F Barros](https://github.com/hebertcisco).<br />
 This project is [MIT](LICENSE) licensed.

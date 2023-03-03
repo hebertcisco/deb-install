@@ -1,24 +1,24 @@
 {
-  "name": "ubuntu-auto",
+  "name": "deb-install",
   "version": "0.0.1",
-  "description": "Ubuntu apps Installation Automation",
+  "description": "Debian based apps Installation Automation",
   "scripts": {
     "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
   "bin": {
-    "ubuntu-auto": "install.sh",
-    "ubuntu-auto-aws": "packages/aws/aws-cli.sh",
-    "ubuntu-auto-basics": "packages/basics/basics.sh",
-    "ubuntu-auto-configs": "packages/configs/index.sh",
-    "ubuntu-auto-dbeaver": "packages/dbeaver/dbeaver.sh",
-    "ubuntu-auto-docker": "packages/docker/docker.sh",
-    "ubuntu-auto-dotnet": "packages/dotnet/dotnet-install.sh",
-    "ubuntu-auto-git": "packages/git/gitconfig.sh",
-    "ubuntu-auto-php": "packages/php/php.sh",
-    "ubuntu-auto-snap": "packages/snap/snap.sh",
-    "ubuntu-auto-vim": "packages/vim/set_vim.sh",
-    "ubuntu-auto-code": "packages/vs-code/vs-code.sh",
-    "ubuntu-auto-zsh": "packages/zsh/set_z.sh"
+    "deb-install": "install.sh",
+    "deb-install-aws": "packages/aws/aws-cli.sh",
+    "deb-install-basics": "packages/basics/basics.sh",
+    "deb-install-configs": "packages/configs/index.sh",
+    "deb-install-dbeaver": "packages/dbeaver/dbeaver.sh",
+    "deb-install-docker": "packages/docker/docker.sh",
+    "deb-install-dotnet": "packages/dotnet/dotnet-install.sh",
+    "deb-install-git": "packages/git/gitconfig.sh",
+    "deb-install-php": "packages/php/php.sh",
+    "deb-install-snap": "packages/snap/snap.sh",
+    "deb-install-vim": "packages/vim/set_vim.sh",
+    "deb-install-code": "packages/vs-code/vs-code.sh",
+    "deb-install-zsh": "packages/zsh/set_z.sh"
   },
   "engines": {
     "node": ">=14.20.1",
@@ -36,7 +36,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hebertcisco/ubuntu-auto-install.git"
+    "url": "git+https://github.com/hebertcisco/deb-install-install.git"
   },
   "keywords": [
     "ubuntu",
@@ -45,9 +45,9 @@
   "author": "Hebert Cisco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hebertcisco/ubuntu-auto-install/issues"
+    "url": "https://github.com/hebertcisco/deb-install-install/issues"
   },
-  "homepage": "https://github.com/hebertcisco/ubuntu-auto-installb#readme",
+  "homepage": "https://github.com/hebertcisco/deb-install-installb#readme",
   "devDependencies": {
     "@types/node": "^14.18.36"
   },
