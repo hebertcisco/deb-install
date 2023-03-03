@@ -1,10 +1,10 @@
 {
   "name": "deb-install",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Debian based apps Installation Automation",
   "scripts": {
     "patch-release": "npm version patch && npm publish && git push --follow-tags",
-    "version": "npm run format && git add -A src",
+    "version": "git add -A .",
     "postversion": "git push && git push --tags"
   },
   "bin": {
