@@ -1,6 +1,5 @@
 #!/bin/sh
-## By Hebert F. Barros 2021
-## Removing any apt ## crashes
+
 echo 'installing code'
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor >microsoft.gpg
 sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/trusted.gpg.d/

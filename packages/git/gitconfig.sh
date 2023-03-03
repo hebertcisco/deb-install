@@ -1,6 +1,5 @@
 #!/bin/sh
-## By Hebert F. Barros 2021
-## Removing any apt ## crashes
+
 echo "What name do you want to use in GIT user.name?"
 echo "For example, mine will be \"John Doe\""
 read git_config_user_name

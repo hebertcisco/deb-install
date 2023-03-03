@@ -1,6 +1,4 @@
 #!/bin/sh
-## By Hebert F. Barros 2021
-## Removing any apt ## crashes
 
 echo 'installing nvm'
 sh -c "$(curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash)"

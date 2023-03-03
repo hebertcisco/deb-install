@@ -1,23 +1,60 @@
 {
   "name": "ubuntu-auto",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "description": "Ubuntu apps Installation Automation",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "patch-release": "npm version patch && npm publish && git push --follow-tags"
   },
+  "bin": {
+    "ubuntu-auto": "install.sh",
+    "ubuntu-auto-aws": "packages/aws/aws-cli.sh",
+    "ubuntu-auto-basics": "packages/basics/basics.sh",
+    "ubuntu-auto-configs": "packages/configs/index.sh",
+    "ubuntu-auto-dbeaver": "packages/dbeaver/dbeaver.sh",
+    "ubuntu-auto-docker": "packages/docker/docker.sh",
+    "ubuntu-auto-dotnet": "packages/dotnet/dotnet-install.sh",
+    "ubuntu-auto-git": "packages/git/gitconfig.sh",
+    "ubuntu-auto-php": "packages/php/php.sh",
+    "ubuntu-auto-snap": "packages/snap/snap.sh",
+    "ubuntu-auto-vim": "packages/vim/set_vim.sh",
+    "ubuntu-auto-code": "packages/vs-code/vs-code.sh",
+    "ubuntu-auto-zsh": "packages/zsh/set_z.sh"
+  },
+  "engines": {
+    "node": ">=14.20.1",
+    "npm": ">=6.14.17"
+  },
+  "os": [
+    "linux",
+    "!darwin",
+    "!win32"
+  ],
+  "cpu": [
+    "x64",
+    "!arm",
+    "!mips"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hebertcisco/ubuntu-auto-install.git"
   },
-  "keywords": ["shell","ubuntu","apt","snap","snapd","deb","debian"],
-  "author": "Hebert F. Barros",
-  "license": "ISC",
+  "keywords": [
+    "ubuntu",
+    "bash"
+  ],
+  "author": "Hebert Cisco",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/hebertcisco/ubuntu-auto-install/issues"
   },
-  "homepage": "https://github.com/hebertcisco/ubuntu-auto-install#readme",
-  "dependencies": {
-    "commander": "^9.0.0"
-  }
+  "homepage": "https://github.com/hebertcisco/ubuntu-auto-installb#readme",
+  "devDependencies": {
+    "@types/node": "^14.18.36"
+  },
+  "files": [
+    "bin/**/*"
+  ],
+  "bundleDependencies": [
+    "@types/node"
+  ]
 }
