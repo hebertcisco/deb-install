@@ -7,5 +7,3 @@ export alias pbcopy='xclip -selection clipboard'
 export alias pbpaste='xclip -selection clipboard -o'
 
 source ~/.zshrc
-
-clear

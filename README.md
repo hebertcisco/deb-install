@@ -9,6 +9,7 @@ apt package manager installed
 An internet connection
 
 ### Usage
+
 To use the script, open a terminal and run the following command:
 
 #### From source
@@ -19,6 +20,7 @@ cd deb-install
 make
 
 ```
+
 #### Bash & Curl
 
 ```sh
@@ -28,7 +30,61 @@ curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/inst
 #### With NPM
 
 ```sh
-npx deb-install
+sudo npm i -g deb-install
+```
+
+##### Comands available affter installed with NPM
+
+```sh
+deb-install
+```
+
+```sh
+deb-install-aws
+```
+
+```sh
+deb-install-basics
+```
+
+```sh
+deb-install-configs
+```
+
+```sh
+deb-install-dbeaver
+```
+
+```sh
+deb-install-docker
+```
+
+```sh
+deb-install-dotnet
+```
+
+```sh
+deb-install-git
+```
+
+```sh
+deb-install-php
+```
+
+```sh
+deb-install-snap
+```
+
+```sh
+deb-install-vim
+```
+
+```sh
+deb-install-code
+```
+
+```sh
+deb-install-zsh
 ```
 
 ### Support

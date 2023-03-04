@@ -44,5 +44,3 @@ cat <<EOF >>~/.config/terminator/config
     palette = "#000000:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#bbbbbb:#555555:#ff5555:#50fa7b:#f1fa8c:#bd93f9:#ff79c6:#8be9fd:#ffffff"
     scrollback_infinite = True
 EOF
-
-clear

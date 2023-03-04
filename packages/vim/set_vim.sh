@@ -10,5 +10,3 @@ if echo "$git_core_editor_to_vim" | grep -iq "^y"; then
 else
 	echo "Okay, no problem. :) Let's move on!"
 fi
-
-clear

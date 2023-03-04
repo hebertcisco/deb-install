@@ -1,5 +1,5 @@
 " Author: Hebert F Barros
-" Source: https://github.com/hebertcisco/deb-install-install
+" Source: https://github.com/hebertcisco/deb-install
 
 " LEADER KEY
 let mapleader=","

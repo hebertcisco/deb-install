@@ -8,5 +8,3 @@ sudo apt-get install snapd -y
 
 echo 'installing git'
 sudo apt install git -y
-
-clear
