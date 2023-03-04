@@ -1,17 +1,16 @@
 #!/bin/sh
 
 main() {
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/update.bash | sh
 
-  bash ./packages/configs/update.bash
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/basics/basics.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/dracula.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/vim/set_vim.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/ssh-keygen.sh | sh
 
-  sh ./packages/basics/basics.sh
-  sh ./packages/configs/dracula.sh
-  sh ./packages/vim/set_vim.sh
-  sh ./packages/configs/ssh-keygen.sh
-
-  sh ./packages/configs/workspaces.sh
-  sh ./packages/zsh/set_z.sh
-  sh ./packages/configs/xclip.sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/workspaces.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/zsh/set_z.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/xclip.sh | sh
 
   echo 'installing pip'
   curl -fsSL http://bit.ly/pip-install-sh | sh
@@ -20,12 +19,12 @@ main() {
 
   curl -fsSL http://bit.ly/code-sh | sh
 
-  sh ./packages/php/php.sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/php/php.sh | sh
 
   echo 'installing chrome'
   curl -fsSL http://bit.ly/chrome-sh | sh
 
-  sh ./packages/nvm/nvm.sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/nvm/nvm.sh | sh
 
   echo 'installing rustup'
   curl https://sh.rustup.rs -sSf | sh
@@ -37,15 +36,16 @@ main() {
   sudo apt-get update
   sudo apt-get install terminator -y
 
-  sh ./packages/configs/dracula.sh
-  sh ./packages/docker/docker.sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/dracula.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/docker/docker.sh | sh
 
-  sh ./packages/aws/aws-cli.sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/aws/aws-cli.sh | sh
 
-  sh ./packages/dbeaver/dbeaver.sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/dbeaver/dbeaver.sh | sh
 
-  sh ./packages/docker/docker.sh -c Current
-  sh ./packages/docker/docker.sh -c Current --runtime aspnetcore
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/docker/docker.sh -c Current | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/docker/docker.sh -c Current --runtime aspnetcore | sh
+
 }
 
 main "$1"
