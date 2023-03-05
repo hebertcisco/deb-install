@@ -18,9 +18,9 @@ main() {
 
   check_if_installed vim && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/vim/set_vim.sh | sh
 
-  check_if_installed workspaces.sh && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/workspaces.sh | sh
+  curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/workspaces.sh | sh
 
-  check_if_installed set_z.sh && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/zsh/set_z.sh | sh
+  check_if_installed zsh && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/zsh/set_z.sh | sh
 
   check_if_installed xclip && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/configs/xclip.sh | sh
 
@@ -34,7 +34,7 @@ main() {
 
   check_if_installed nvm && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/nvm/nvm.sh | sh
 
-  check_if_installed rustup && curl https://sh.rustup.rs -sSf | sh
+  check_if_installed cargo && curl https://sh.rustup.rs -sSf | sh
 
   check_if_installed deno && curl -fsSL https://deno.land/x/install/install.sh | sh
 
