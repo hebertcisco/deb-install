@@ -1,6 +1,12 @@
 #!/bin/sh
 
-echo "deb https://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list
-curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | sudo apt-key add
-sudo apt-get update
-sudo apt-get install sbt
+if [ "$(uname -m)" = "x86_64" ]; then
+    curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d >cs && chmod +x cs && ./cs setup
+elif [ "$(uname -m)" = "aarch64" ]; then
+    curl -fL https://github.com/VirtusLab/coursier-m1/releases/latest/download/cs-aarch64-pc-linux.gz | gzip -d >cs && chmod +x cs && ./cs setup
+else
+    echo "Unsupported architecture $(uname -m)"
+    exit 1
+fi
+
+echo "Coursier set up successfully!"
