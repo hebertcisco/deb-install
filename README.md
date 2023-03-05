@@ -60,7 +60,11 @@ deb-install-docker
 ```
 
 ```sh
-deb-install-dotnet
+deb-install-dotnet -c Current
+```
+
+```sh
+deb-install-dotnet -c Current --runtime aspnetcore
 ```
 
 ```sh
