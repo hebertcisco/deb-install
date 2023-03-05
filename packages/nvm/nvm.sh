@@ -1,20 +1,32 @@
 #!/bin/sh
 
-echo 'installing nvm'
-sh -c "$(curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash)"
+NVM_VERSION="v0.34.0"
 
-export NVM_DIR="$HOME/.nvm" && (
-    git clone https://github.com/creationix/nvm.git "$NVM_DIR"
-    cd "$NVM_DIR"
-    git checkout $(git describe --abbrev=0 --tags --match "v[0-9]*" $(git rev-list --tags --max-count=1))
-) && \. "$NVM_DIR/nvm.sh"
+echo "What version of Node.js do you want to use?"
+echo "For example, mine will be \"16\""
+read NODE_VERSION
+
+if command -v nvm >/dev/null 2>&1; then
+    echo "nvm is already installed."
+else
+    echo "Installing nvm..."
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/$NVM_VERSION/install.sh | bash
+fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-source ~/.zshrc
-nvm --version
-nvm install 12
-nvm alias default 12
-node --version
-npm --version
+if command -v node >/dev/null 2>&1; then
+    echo "node is already installed."
+else
+    echo "Installing node $NODE_VERSION..."
+    nvm install $NODE_VERSION
+fi
+
+nvm alias default $NODE_VERSION
+
+npm_version=$(npm -v)
+echo "npm version: $npm_version"
+
+node_version=$(node -v)
+echo "node version: $node_version"
