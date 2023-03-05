@@ -1,5 +1,6 @@
 #!/bin/sh
 
+echo "Configuring Git user information"
 echo "What name do you want to use in GIT user.name?"
 echo "For example, mine will be \"John Doe\""
 read git_config_user_name
@@ -10,4 +11,4 @@ echo "For example, mine will be \"doe.john@gmail.com\""
 read git_config_user_email
 git config --global user.email $git_config_user_email
 
-echo "Git configured with successfully!"
+echo "Git user information configured successfully!"
