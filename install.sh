@@ -46,9 +46,9 @@ main() {
 
   check_if_installed dbeaver && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/dbeaver/dbeaver.sh | sh
 
-  check_if_installed dotnet && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/dotnet/dotnet-install.sh -c Current | sh
-  check_if_installed aspnetcore && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/dotnet/dotnet-install.sh -c Current --runtime aspnetcore | sh
+  check_if_installed dotnet && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/dotnet/dotnet-install.sh | bash -s -- -c Current
 
+  check_if_installed aspnetcore && curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/dotnet/dotnet-install.sh -c Current --runtime aspnetcore | sh
 }
 
 main "$1"
