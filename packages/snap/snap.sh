@@ -1,9 +1,10 @@
 #!/bin/sh
 
 if
-  ! snap -v snap &
+  ! snap --version snap &
   >/dev/null
 then
+  echo "Type the password:"
   echo 'installing spotify'
   sudo snap install spotify
 
@@ -39,5 +40,23 @@ then
 
   echo 'installing audacity'
   sudo snap install audacity --classic
+
+  echo 'installing phpstorm'
+  sudo snap install phpstorm --classic
+
+  echo 'installing webstorm'
+  sudo snap install webstorm --classic
+
+  echo 'installing datagrip'
+  sudo snap install datagrip --classic
+
+  echo 'installing goland'
+  sudo snap install goland --classic
+  
+  echo 'installing pycharm-professional'
+  sudo snap install pycharm-professional --classic
+
+  echo 'installing ngrok'
+  sudo snap install ngrok
   return 1
 fi
