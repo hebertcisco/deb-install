@@ -23,8 +23,8 @@
     "deb-install-zsh": "./packages/zsh/set_z.sh"
   },
   "engines": {
-    "node": ">=14.20.1",
-    "npm": ">=6.14.17"
+    "node": ">=16",
+    "npm": ">=8"
   },
   "os": [
     "linux",
@@ -33,7 +33,7 @@
   ],
   "cpu": [
     "x64",
-    "!arm",
+    "arm",
     "!mips"
   ],
   "repository": {
@@ -42,7 +42,19 @@
   },
   "keywords": [
     "ubuntu",
-    "bash"
+    "bash",
+    "debian",
+    "linux",
+    "automation",
+    "install",
+    "apps",
+    "packages",
+    "cli",
+    "command",
+    "line",
+    "interface",
+    "terminal",
+    "shell"
   ],
   "author": "Hebert Cisco",
   "license": "MIT",
@@ -51,7 +63,7 @@
   },
   "homepage": "https://hebertcisco.github.io/deb-install/",
   "devDependencies": {
-    "@types/node": "^14.18.36"
+    "@types/node": "^16.18.58"
   },
   "files": [
     "bin/**/*"
