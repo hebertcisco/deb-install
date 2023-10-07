@@ -1,6 +1,6 @@
 #!/bin/sh
 
-NVM_VERSION="v0.34.0"
+NVM_VERSION="v0.39.5"
 
 echo "What version of Node.js do you want to use?"
 echo "For example, mine will be \"16\""
