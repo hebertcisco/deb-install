@@ -1,12 +1,12 @@
 # Debian based apps Installation Automation
 
-> This script automates the installation of useful tools for a common dev on Debian-based systems.
+> This script automates the installation of useful tools for a common dev on
+> Debian-based systems.
 
 ### Requirements
 
-A Debian-based system (e.g. Ubuntu, Debian)
-apt package manager installed
-An internet connection
+A Debian-based system (e.g. Ubuntu, Debian) apt package manager installed An
+internet connection
 
 ### Usage
 
@@ -18,13 +18,12 @@ To use the script, open a terminal and run the following command:
 git clone https://github.com/hebertcisco/deb-install
 cd deb-install
 make
-
 ```
 
 #### Bash & Curl
 
 ```sh
-curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/install.sh | sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/install.sh)"
 ```
 
 #### With NPM
@@ -93,11 +92,13 @@ deb-install-zsh
 
 ### Support
 
-If you have any issues or questions about using this script, please open an issue on the GitHub repository or contact the author directly.
+If you have any issues or questions about using this script, please open an
+issue on the GitHub repository or contact the author directly.
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](issues).
+Contributions, issues and feature requests are welcome!<br />Feel free to check
+[issues page](issues).
 
 ## Show your support
 
@@ -109,5 +110,5 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2023 [Hebert F Barros](https://github.com/hebertcisco).<br />
-This project is [MIT](LICENSE) licensed.
+Copyright © 2023 [Hebert F Barros](https://github.com/hebertcisco).<br /> This
+project is [MIT](LICENSE) licensed.

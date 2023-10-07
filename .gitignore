@@ -3,3 +3,4 @@ node_modules
 *.deb
 *.rpm
 *.gpg
+get-pip.py

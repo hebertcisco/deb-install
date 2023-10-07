@@ -1,18 +1,17 @@
 #!/bin/sh
 
-if ! command -v apache2 >/dev/null; then
-    echo 'installing apache2'
-    sudo apt-get update
-    sudo apt-get install apache2
-else
-    echo 'apache2 is already installed'
-fi
-
 if ! command -v php >/dev/null; then
-    echo 'installing php and required extensions'
-    sudo apt-get install php libapache2-mod-php php-soap php-xml php-curl php-opcache php-gd php-sqlite3 php-mbstring
+    echo 'installing php8.2'
+    sudo apt update && sudo apt -y upgrade
+    sudo apt autoremove
+    sudo apt install -y lsb-release gnupg2 ca-certificates apt-transport-https software-properties-common
+    sudo add-apt-repository ppa:ondrej/php
+    sudo apt update
+    sudo apt install -y php8.2
+    sudo apt install -y php8.2-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis}
+    php --version
 else
-    echo 'php and required extensions are already installed'
+    echo 'php8.2 is already installed'
 fi
 
 if ! command -v composer >/dev/null; then
