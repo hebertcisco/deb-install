@@ -75,6 +75,10 @@ deb-install-php
 ```
 
 ```sh
+deb-install-php8.2
+```
+
+```sh
 deb-install-snap
 ```
 
