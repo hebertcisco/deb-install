@@ -1,6 +1,6 @@
 {
   "name": "deb-install",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Debian based apps Installation Automation",
   "scripts": {
     "patch-release": "npm version patch && npm publish && git push --follow-tags",
@@ -17,6 +17,7 @@
     "deb-install-dotnet": "./packages/dotnet/dotnet-install.sh",
     "deb-install-git": "./packages/git/gitconfig.sh",
     "deb-install-php": "./packages/php/php.sh",
+    "deb-install-php8.2": "./packages/php/php8.2.sh",
     "deb-install-snap": "./packages/snap/snap.sh",
     "deb-install-vim": "./packages/vim/set_vim.sh",
     "deb-install-code": "./packages/vs-code/vs-code.sh",
