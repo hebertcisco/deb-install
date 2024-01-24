@@ -3,7 +3,7 @@
 NVM_VERSION="v0.39.5"
 
 echo "What version of Node.js do you want to use?"
-echo "For example, mine will be \"16\""
+echo "For example, mine will be \"18\""
 read NODE_VERSION
 
 if command -v nvm >/dev/null 2>&1; then
