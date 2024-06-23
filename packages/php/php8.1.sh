@@ -1,17 +1,17 @@
 #!/bin/sh
 
 if ! command -v php >/dev/null; then
-    echo 'installing php8.2'
+    echo 'installing php8.1'
     sudo apt update && sudo apt -y upgrade
     sudo apt autoremove
     sudo apt install -y lsb-release gnupg2 ca-certificates apt-transport-https software-properties-common
     sudo add-apt-repository ppa:ondrej/php
     sudo apt update
-    sudo apt install -y php8.2
-    sudo apt install -y php8.2-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis,sqlite3,pdo_sqlite}
+    sudo apt install -y php8.1
+    sudo apt install -y php8.1-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis,sqlite3,pdo_sqlite}
     php --version
 else
-    echo 'php8.2 is already installed'
+    echo 'php8.1 is already installed'
 fi
 
 if ! command -v composer >/dev/null; then
