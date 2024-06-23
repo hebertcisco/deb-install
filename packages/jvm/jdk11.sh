@@ -3,7 +3,7 @@
 sudo apt-get update && sudo apt-get upgrade -y
 
 echo 'Install OpenJDK'
-sudo apt-get install -y openjdk-11-jdksssss
+sudo apt-get install -y openjdk-11-jdk
 
 echo 'Install jre'
 
