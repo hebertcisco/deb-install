@@ -15,6 +15,8 @@
     "deb-install-dbeaver": "./packages/dbeaver/dbeaver.sh",
     "deb-install-docker": "./packages/docker/docker.sh",
     "deb-install-dotnet": "./packages/dotnet/dotnet-install.sh",
+    "deb-install-jdk11": "./packages/jvm/jdk11.sh",
+    "deb-install-jdk17": "./packages/jvm/jdk17.sh",
     "deb-install-git": "./packages/git/gitconfig.sh",
     "deb-install-php": "./packages/php/php.sh",
     "deb-install-php8.2": "./packages/php/php8.2.sh",
@@ -24,8 +26,7 @@
     "deb-install-zsh": "./packages/zsh/set_z.sh"
   },
   "engines": {
-    "node": ">=16",
-    "npm": ">=8"
+    "node": ">=18"
   },
   "os": [
     "linux",
@@ -64,7 +65,7 @@
   },
   "homepage": "https://hebertcisco.github.io/deb-install/",
   "devDependencies": {
-    "@types/node": "^20.8.3"
+    "@types/node": "^18.11.9"
   },
   "files": [
     "bin/**/*"
