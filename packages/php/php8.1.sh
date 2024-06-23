@@ -8,7 +8,7 @@ if ! command -v php >/dev/null; then
     sudo add-apt-repository ppa:ondrej/php
     sudo apt update
     sudo apt install -y php8.1
-    sudo apt install -y php8.1-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis,sqlite3,pdo_sqlite}
+    sudo apt install -y php8.1-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis,sqlite3}
     php --version
 else
     echo 'php8.1 is already installed'
