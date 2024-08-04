@@ -8,11 +8,12 @@ if ! command -v php >/dev/null; then
     sudo add-apt-repository ppa:ondrej/php
     sudo apt update
     sudo apt install -y php8.2
-    sudo apt install -y php8.2-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis,sqlite3,simplexml,dom,curl,xml}
     php --version
 else
     echo 'php8.2 is already installed'
 fi
+
+sudo apt install -y php8.2-{bcmath,fpm,xml,mysql,zip,intl,ldap,gd,cli,bz2,curl,mbstring,pgsql,opcache,soap,cgi,redis,sqlite3,simplexml,dom,curl,xml}
 
 if ! command -v composer >/dev/null; then
     echo 'installing composer'
