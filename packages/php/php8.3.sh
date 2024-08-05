@@ -4,6 +4,7 @@ if ! command -v php >/dev/null; then
     echo 'installing php8.3'
     sudo apt update && sudo apt -y upgrade
     sudo apt autoremove
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/hebertcisco/deb-install/master/packages/basics/remove-apache2.sh)"
     sudo apt install -y lsb-release gnupg2 ca-certificates apt-transport-https software-properties-common
     sudo add-apt-repository ppa:ondrej/php
     sudo apt update
