@@ -65,7 +65,7 @@
   },
   "homepage": "https://hebertcisco.github.io/deb-install/",
   "devDependencies": {
-    "@types/node": "^24.0.8"
+    "@types/node": "^25.0.3"
   },
   "files": [
     "bin/**/*"
